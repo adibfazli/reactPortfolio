@@ -1,26 +1,48 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory, NavLink } from "react-router-dom";
+
 
 
 const Nav = () =>{
-
+  const history = useHistory();
     return(
         <NavStyleWrapper>
             <div className="nav">
                 <div className="navButtons">
-                    <span>____Home____________</span>
-                    <span>_______Projects__________</span>
-                    <span>_______About__________</span>
-                    <span>___________Contact__________</span>
+                    <NavLink
+                      activeclassname="active_main_menu"
+                      className="navItems home"
+                      name="/"
+                      to="/"
+                    >____Home____________</NavLink>
+                    <NavLink
+                      activeclassname="active_main_menu"
+                      className="navItems home"
+                      name="/projects"
+                      to="/projects"
+                      >_______Projects__________</NavLink>
+                    <NavLink
+                      activeclassname="active_main_menu"
+                      className="navItems home"
+                      name="/about"
+                      to="/about"
+                      >_______About__________</NavLink>
+                    <NavLink
+                      activeclassname="active_main_menu"
+                      className="navItems home"
+                      name="/contact"
+                      to="/contact"
+                      >___________Contact__________</NavLink>
+                    <div class="mid">
+                        <label class="rocker">
+                            <input type="checkbox" checked/>
+                            <span class="switch-left">On</span>
+                            <span class="switch-right">Off</span>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="mid">
-                    <label class="rocker">
-                        <input type="checkbox" checked/>
-                        <span class="switch-left">On</span>
-                        <span class="switch-right">Off</span>
-                    </label>
-                </div>
                 
             </div>
         </NavStyleWrapper>
@@ -29,21 +51,21 @@ const Nav = () =>{
 export default Nav;
 
 const NavStyleWrapper = styled.div `
-*{
-    width:100%;
-    height:70px;
-    margin:0px;
-    // background-color:gray;
+.nav{
+  width :100%;
 }
 .navButtons{
     margin-top:30px;
+    display:flex;
 
 }
-.navButtons span{
+.navItems{
+    text-decoration: none;
     font-family: neonTitle;
     color:#00FFFF;
     font-size: 40px;
     text-shadow: 0px 0px 30px #00FFFF;
+    margin:0;
   }
 
 

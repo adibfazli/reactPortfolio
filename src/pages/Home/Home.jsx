@@ -6,7 +6,6 @@ const Home = () =>{
 
     return(
         <HomeStyleWrapper>
-            <p>Adib___Fazli</p>
             <body>
                 <div className="sign">
                     <span className="fast-flicker">A</span>

@@ -31,32 +31,34 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Switch>
-          <Route exact={true} path="/" render={() => (
-              <>
-                <Home />
-              </>
-            )}
-          />
-          <Route exact={true} path="/projects" render={() => (
-              <>
-                <Projects />
-              </>
-            )}
-          />
-          <Route exact={true} path="/about" render={() => (
-              <>
-                <About />
-              </>
-            )}
-          />
-          <Route exact={true} path="/contact" render={() => (
-              <>
-                <Contact />
-              </>
-            )}
-          />
-      </Switch>
+      <div className="app">
+        <Switch>
+            <Route exact={true} path="/" render={() => (
+                <>
+                  <Home />
+                </>
+              )}
+            />
+            <Route exact={true} path="/projects" render={() => (
+                <>
+                  <Projects />
+                </>
+              )}
+            />
+            <Route exact={true} path="/about" render={() => (
+                <>
+                  <About />
+                </>
+              )}
+            />
+            <Route exact={true} path="/contact" render={() => (
+                <>
+                  <Contact />
+                </>
+              )}
+            />
+        </Switch>
+      </div>
     </>
   );
 }
