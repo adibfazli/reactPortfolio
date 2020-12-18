@@ -1,38 +1,37 @@
 import React from "react";
 import styled from "styled-components";
+import projectAPI from "../../utils/Api/ProjectDataAPI"
 
 
 const Projects = () =>{
 
     return(
         <ProjectsStyleWrapper>
-       <div class="slider">
-  
-  <a href="#slide-1">1</a>
-  <a href="#slide-2">2</a>
-  <a href="#slide-3">3</a>
-  <a href="#slide-4">4</a>
-  <a href="#slide-5">5</a>
+          {projectAPI.map(( p , idx ) => {
+            return(
+              <div>
+                <h1>{p.name}</h1>
+                <div class="slider">
 
-  <div class="slides">
-    <div id="slide-1">
-      1
-    </div>
-    <div id="slide-2">
-      2
-    </div>
-    <div id="slide-3">
-      3
-    </div>
-    <div id="slide-4">
-      4
-    </div>
-    <div id="slide-5">
-      5
-    </div>
-  </div>
-</div>
+                      <a href={"#slide"+(idx+1)+"/1"}>1</a>
+                      <a href={"#slide"+(idx+1)+"/2"}>2</a>
+                      <a href={"#slide"+(idx+1)+"/3"}>3</a>
+                      <a href={"#slide"+(idx+1)+"/4"}>4</a>
+                      <a href={"#slide"+(idx+1)+"/5"}>5</a>
 
+                      <div class="slides">
+                        <div id={"slide"+(idx+1)+"/1"}>1</div>
+                        <div id={"slide"+(idx+1)+"/2"}>2</div>
+                        <div id={"slide"+(idx+1)+"/3"}>3</div>
+                        <div id={"slide"+(idx+1)+"/4"}>4</div>
+                        <div id={"slide"+(idx+1)+"/5"}>5</div>
+                      </div>
+                    </div>
+                    
+              </div>
+              );
+            }
+          )}
         </ProjectsStyleWrapper>
     );
 }

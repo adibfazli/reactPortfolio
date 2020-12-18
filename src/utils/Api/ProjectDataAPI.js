@@ -1,5 +1,4 @@
-const ProjectsDataAPI = () =>{
-    projects = [
+const projects = [
         {
             name:'Zart Message',
             gitHubImage:'./image/Octocat.png',
@@ -33,7 +32,4 @@ const ProjectsDataAPI = () =>{
             technology:'./image/jsHtmlCss.png',
         }
     ]
-}
-export default {
-    ProjectsDataAPI,
-}
+export default projects;
