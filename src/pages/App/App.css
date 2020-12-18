@@ -1,0 +1,9 @@
+*{
+  background-color: #1d1e22;
+}
+@font-face{
+  font-family: 'neonTitle';
+  src: url(../../imageAndFont//fonts//neon/NEON____.TTF);
+  font-style: normal;
+}
+
