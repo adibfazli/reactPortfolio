@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import NavBar from '../../components/NavBar/NavBar'
 import Home from '../Home/Home'
 import Projects from '../Projects/Projects'

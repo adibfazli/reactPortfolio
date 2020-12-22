@@ -12,23 +12,18 @@ const Projects = () => {
         {projectAPI.map((p, idx) => {
           return (
             <div className="each_project_Div">
-              <h1>{p.name}</h1>
+              <div className="title_div">
+                <h2>{p.name}</h2>
+              </div>
 
               <div className="projectsNavBar_parent">
+                <div className="projectsNavBar_child_items_container">
+                  <a href={"#nav"+(idx + 1) + "/1"} className="projectsNavBar_child_items">Images</a>
+                  <a href={"#nav"+(idx + 1)+"/2"} className="projectsNavBar_child_items">Info</a>
+                  <a href={"#nav" + (idx + 1) + "/3"} className="projectsNavBar_child_items">Technologies</a>
+                  <a href={"#nav" + (idx + 1) + "/4"} className="projectsNavBar_child_items">Goals</a>
+                </div>
 
-
-                  <a href={"#nav"+(idx + 1) + "/1"} className="projectsNavBar_child_items">
-                    Images
-                  </a>
-                  <a href={"#nav"+(idx + 1)+"/2"} className="projectsNavBar_child_items">
-                    Info
-                  </a>
-                  <a href={"#nav" + (idx + 1) + "/3"} className="projectsNavBar_child_items">
-                    Technologies
-                  </a>
-                  <a href={"#nav" + (idx + 1) + "/4"} className="projectsNavBar_child_items">
-                    Goals
-                  </a>
                 <div className="projectsNavBar_child_div">
                   {/* Images */}
                   <div id={"nav" + (idx + 1) + "/1"} className="slider">
@@ -73,14 +68,18 @@ const Projects = () => {
 export default Projects;
 
 const ProjectsStyleWrapper = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
   * {
     box-sizing: border-box;
   }
   .main_projects_parent_div {
+    margin-top: 5vh;
     border-radius: 20px;
+    border:1px solid black;
     position: relative;
-    height: 71vh;
-    background: transparent;
+    height: 80vh;
+    background-color: white;
     display: flex;
     overflow: auto;
     flex: none;
@@ -100,51 +99,14 @@ const ProjectsStyleWrapper = styled.div`
     text-align: center;
     position: relative;
   }
-
-
-  p {
-    font-family: neonTitle;
-    color: pink;
-    font-size: 40px;
-    text-shadow: 0px 0px 30px pink;
-    position: absolute;
-    top: -10.9%;
-    left: 2%;
+  .title_div{
+    width:100%;
+    background-color: white;
   }
-
-  // _________________________START_________________Projects Nav
-  .projectsNavBar_parent {
-    height: 30px;
-    // display: flex;
-    // justify-content: center;
-    width: 100%;
+  .title_div h2{
+    font-family: 'Tajawal', sans-serif;
+    color:white;
   }
-  .projectsNavBar_child_items {
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-  }
-  .projectsNavBar_child_items:hover {
-    background-color: gray;
-    color: black;
-  }
-  // ________________________END__________________Projects Nav
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -159,17 +121,55 @@ const ProjectsStyleWrapper = styled.div`
     background-color: red;
     // margin-top:80px;
   }
+  
+  // _________________________START_________________Projects Nav
+  .projectsNavBar_child_items_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:yellow;
+    height:5%;
+  }
+  .projectsNavBar_child_items {
+    cursor: pointer;
+    display: flex;
+    width:100%;
+    color: white;
+    text-decoration:none;
+    border-radius: 20px;
+    justify-content: center;
+    font-size:25px;
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .projectsNavBar_child_items:hover {
+    background-color: gray;
+    color: black;
+  }
+  // ________________________END__________________Projects Nav
+
+
+
+
+
+
+
+
+
+  
 
   .projectsNavBar_parent > a {
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: white;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    // background: white;
     text-decoration: none;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
+    justify-content: space-between;
+    // border-radius: 50%;
+    // margin: 0 0 0.5rem 0;
     position: relative;
   }
   .projectsNavBar_parent > a:active {
@@ -185,6 +185,12 @@ const ProjectsStyleWrapper = styled.div`
       display: none;
     }
   }
+
+
+
+
+
+
 
 
 
@@ -211,6 +217,12 @@ const ProjectsStyleWrapper = styled.div`
   .projectsNavBar_child_div::-webkit-scrollbar-track {
     background: transparent;
   }
+
+
+
+
+// this makes the image to expand V V V
+
   .projectsNavBar_child_div > div {
     scroll-snap-align: start;
     flex-shrink: 0;
