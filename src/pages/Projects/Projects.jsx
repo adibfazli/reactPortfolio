@@ -5,10 +5,7 @@ import projectAPI from "../../utils/Api/ProjectDataAPI";
 const Projects = () => {
   return (
     <ProjectsStyleWrapper>
-      <div
-        className="main_projects_parent_div y mandatory-scroll-snapping"
-        dir="ltr"
-      >
+      <div className="main_projects_parent_div y mandatory-scroll-snapping" dir="ltr">
         {projectAPI.map((p, idx) => {
           return (
             <div className="each_project_Div">
@@ -26,24 +23,29 @@ const Projects = () => {
 
                 <div className="projectsNavBar_child_div">
                   {/* Images */}
-                  <div id={"nav" + (idx + 1) + "/1"} className="slider">
-                    <div class="slides">
-                      <div id={"slide" + (idx + 1) + "/1"}>1</div>
-                      <div id={"slide" + (idx + 1) + "/2"}>2</div>
-                      <div id={"slide" + (idx + 1) + "/3"}>3</div>
-                      <div id={"slide" + (idx + 1) + "/4"}>4</div>
-                      <div id={"slide" + (idx + 1) + "/5"}>5</div>
-                    </div>
+                  <div id={"nav"+(idx + 1)+"/1"} className="">
+                    <div className="slider">
+                      <div className="numbers_container">
+                        <a href={"#slide" + (idx + 1) + "/1"}>1</a>
+                        <a href={"#slide" + (idx + 1) + "/2"}>2</a>
+                        <a href={"#slide" + (idx + 1) + "/3"}>3</a>
+                        <a href={"#slide" + (idx + 1) + "/4"}>4</a>
+                        <a href={"#slide" + (idx + 1) + "/5"}>5</a>
+                      </div>
 
-                    <a href={"#slide" + (idx + 1) + "/1"}>1</a>
-                    <a href={"#slide" + (idx + 1) + "/2"}>2</a>
-                    <a href={"#slide" + (idx + 1) + "/3"}>3</a>
-                    <a href={"#slide" + (idx + 1) + "/4"}>4</a>
-                    <a href={"#slide" + (idx + 1) + "/5"}>5</a>
+                      <div class="slides">
+                        <div id={"slide" + (idx + 1) + "/1"}>1</div>
+                        <div id={"slide" + (idx + 1) + "/2"}>2</div>
+                        <div id={"slide" + (idx + 1) + "/3"}>3</div>
+                        <div id={"slide" + (idx + 1) + "/4"}>4</div>
+                        <div id={"slide" + (idx + 1) + "/5"}>5</div>
+                      </div>
+
+                    </div>
                   </div>
 
                   {/* Info */}
-                  <div id={"nav"+(idx + 1)+"/2"} className="">
+                  <div id={"nav"+(idx + 1)+"/2"} className="slider">
                     <h5>Info</h5>
                   </div>
 
@@ -74,12 +76,12 @@ const ProjectsStyleWrapper = styled.div`
     box-sizing: border-box;
   }
   .main_projects_parent_div {
-    margin-top: 5vh;
-    border-radius: 20px;
+    margin-top: 1vh;
+    border-radius: 5px;
     border:1px solid black;
     position: relative;
-    height: 80vh;
-    background-color: white;
+    height: 89vh;
+    background-color: #242526;
     display: flex;
     overflow: auto;
     flex: none;
@@ -101,7 +103,7 @@ const ProjectsStyleWrapper = styled.div`
   }
   .title_div{
     width:100%;
-    background-color: white;
+    // background-color: white;
   }
   .title_div h2{
     font-family: 'Tajawal', sans-serif;
@@ -115,10 +117,10 @@ const ProjectsStyleWrapper = styled.div`
 
   .projectsNavBar_parent {
     width: 100%;
-    height:72vh;
+    height:85vh;
     text-align: center;
     overflow: hidden;
-    background-color: red;
+    // background-color: red;
     // margin-top:80px;
   }
   
@@ -127,7 +129,7 @@ const ProjectsStyleWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:yellow;
+    // background-color:yellow;
     height:5%;
   }
   .projectsNavBar_child_items {
@@ -136,7 +138,6 @@ const ProjectsStyleWrapper = styled.div`
     width:100%;
     color: white;
     text-decoration:none;
-    border-radius: 20px;
     justify-content: center;
     font-size:25px;
     font-family: 'Tajawal', sans-serif;
@@ -202,17 +203,18 @@ const ProjectsStyleWrapper = styled.div`
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    height:90%;
   }
   .projectsNavBar_child_div::-webkit-scrollbar {
     width: 10px;
-    height: 20px;
-    background-color: black;
-    border-radius: 10px;
-    border: 2px solid orange;
+    height: 10px;
+    // background-color: black;
+    // border-radius: 10px;
+    // border: 2px solid orange;
   }
   .projectsNavBar_child_div::-webkit-scrollbar-thumb {
     background: orange;
-    border-radius: 10px;
+    border-radius: 2px;
   }
   .projectsNavBar_child_div::-webkit-scrollbar-track {
     background: transparent;
@@ -265,9 +267,10 @@ const ProjectsStyleWrapper = styled.div`
 
   
   .slider {
-    width: 500px;
+    width: 530px;
     text-align: center;
     overflow: hidden;
+    display:flex;
   }
 
   .slides {
@@ -281,14 +284,14 @@ const ProjectsStyleWrapper = styled.div`
   }
   .slides::-webkit-scrollbar {
     width: 10px;
-    height: 20px;
-    background-color: black;
-    border-radius: 10px;
-    border: 2px solid orange;
+    height: 10px;
+    background-color: white;
+    // border-radius: 10px;
+    // border: 2px solid orange;
   }
   .slides::-webkit-scrollbar-thumb {
     background: orange;
-    border-radius: 10px;
+    // border-radius: 2px;
   }
   .slides::-webkit-scrollbar-track {
     background: transparent;
@@ -299,7 +302,7 @@ const ProjectsStyleWrapper = styled.div`
     width: 500px;
     height: 500px;
     margin-right: 50px;
-    border-radius: 10px;
+    // border-radius: 10px;
     background: #eee;
     transform-origin: center center;
     transform: scale(1);
@@ -322,29 +325,32 @@ const ProjectsStyleWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  .slider > a {
+  .numbers_container{
+    width:200px;
+    background-color:pink;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+  }
+  .numbers_container > a {
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 100%;
+    height: 100%;
     background: white;
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
-    position: relative;
+    font-size:25px;
   }
-  .slider > a:active {
+  .numbers_container > a:active {
     top: 1px;
   }
-  .slider > a:focus {
+  .numbers_container > a:focus {
     background: #000;
   }
 
   /* Don't need button navigation */
   @supports (scroll-snap-type) {
-    .slider > a {
+    .numbers_container > a {
       display: none;
     }
   }

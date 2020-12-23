@@ -49,10 +49,11 @@ const NavStyleWrapper = styled.div `
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
 
 .nav{
-  width :100%;
+  width :96%;
   height: 70px;
   display:flex;
   align-items:center;
+  justify-content:space-between;
   background-color: green;
   padding: 0 2%;
 }
@@ -60,6 +61,7 @@ const NavStyleWrapper = styled.div `
     display:flex;
     width:40%;
     justify-content: space-between;
+    align-items: center;
 }
 .nav h1{
   // font-weight: 700;
@@ -72,7 +74,6 @@ const NavStyleWrapper = styled.div `
     font-family: 'Tajawal', sans-serif;
     color: white;
     font-size: 25px;
-    margin:0;
   }
 
 
