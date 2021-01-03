@@ -16,7 +16,7 @@ const Projects = () => {
               <div className="projectsNavBar_parent">
                 <div className="projectsNavBar_child_items_container">
                   <a href={"#nav"+(idx + 1) + "/1"} className="projectsNavBar_child_items">Images</a>
-                  <a href={"#nav"+(idx + 1)+"/2"} className="projectsNavBar_child_items">Info</a>
+                  <a href={"#nav"+(idx + 1)+"/2"} className="projectsNavBar_child_items">Informaton</a>
                   <a href={"#nav" + (idx + 1) + "/3"} className="projectsNavBar_child_items">Technologies</a>
                   <a href={"#nav" + (idx + 1) + "/4"} className="projectsNavBar_child_items">Goals</a>
                 </div>
