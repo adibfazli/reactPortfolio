@@ -34,11 +34,11 @@ const Projects = () => {
                       </div>
 
                       <div class="slides">
-                        <div id={"slide" + (idx + 1) + "/1"}>1</div>
-                        <div id={"slide" + (idx + 1) + "/2"}>2</div>
-                        <div id={"slide" + (idx + 1) + "/3"}>3</div>
-                        <div id={"slide" + (idx + 1) + "/4"}>4</div>
-                        <div id={"slide" + (idx + 1) + "/5"}>5</div>
+                        <div id={"slide" + (idx + 1) + "/1"}>2<img src={p.image[0]} /></div>
+                        <div id={"slide" + (idx + 1) + "/2"}>2<img src={p.image[1]} /></div>
+                        <div id={"slide" + (idx + 1) + "/3"}>3<img src={p.image[2]} /></div>
+                        <div id={"slide" + (idx + 1) + "/4"}>4<img src={p.image[3]} /></div>
+                        <div id={"slide" + (idx + 1) + "/5"}>5<img src={p.image[4]} /></div>
                       </div>
 
                     </div>
@@ -46,7 +46,7 @@ const Projects = () => {
 
                   {/* Info */}
                   <div id={"nav"+(idx + 1)+"/2"} className="slider">
-                    <h5>Info</h5>
+                    <h5>{p.info}</h5>
                   </div>
 
                   {/* Technologies */}
@@ -56,7 +56,7 @@ const Projects = () => {
 
                   {/* Goals */}
                   <div id={"nav" + (idx + 1) + "/4"}>
-                    <h5>Goals</h5>
+                    <h5>{p.goals}</h5>
                   </div>
                 </div>
               </div>
