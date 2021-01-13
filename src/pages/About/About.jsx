@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Setar from "../../imageAndFont/images/setarImg.png"
 
 
 const About = () =>{
@@ -7,6 +8,7 @@ const About = () =>{
     return(
         <AboutStyleWrapper>
         <p>About</p>
+        <img src={Setar} alt=""/>
         </AboutStyleWrapper>
     );
 }

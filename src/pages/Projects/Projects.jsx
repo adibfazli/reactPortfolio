@@ -23,7 +23,8 @@ const Projects = () => {
 
                 <div className="projectsNavBar_child_div">
                   {/* Images */}
-                  <div id={"nav"+(idx + 1)+"/1"} className="">
+                  <div id={"nav"+(idx + 1)+"/1"} className="imageAndPointsGrid_Div">
+
                     <div className="slider">
                       <div className="numbers_container">
                         <a href={"#slide" + (idx + 1) + "/1"}>1</a>
@@ -32,15 +33,17 @@ const Projects = () => {
                         <a href={"#slide" + (idx + 1) + "/4"}>4</a>
                         <a href={"#slide" + (idx + 1) + "/5"}>5</a>
                       </div>
-
-                      <div class="slides">
+                      <div className="slides">
                         <div id={"slide" + (idx + 1) + "/1"}>2<img src={p.image[0]} /></div>
                         <div id={"slide" + (idx + 1) + "/2"}>2<img src={p.image[1]} /></div>
                         <div id={"slide" + (idx + 1) + "/3"}>3<img src={p.image[2]} /></div>
                         <div id={"slide" + (idx + 1) + "/4"}>4<img src={p.image[3]} /></div>
                         <div id={"slide" + (idx + 1) + "/5"}>5<img src={p.image[4]} /></div>
                       </div>
+                    </div>
 
+                    <div>
+                      <h1>hi</h1>
                     </div>
                   </div>
 
@@ -77,11 +80,11 @@ const ProjectsStyleWrapper = styled.div`
   }
   .main_projects_parent_div {
     margin-top: 1vh;
-    border-radius: 5px;
-    border:1px solid black;
+    // border-radius: 5px;
+    // border:1px solid black;
     position: relative;
     height: 89vh;
-    background-color: #242526;
+    // background-color: #242526;
     display: flex;
     overflow: auto;
     flex: none;
@@ -238,13 +241,13 @@ const ProjectsStyleWrapper = styled.div`
     transition: transform 0.5s;
     position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     font-size: 100px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
   }
-
-
   
 
 
@@ -267,14 +270,19 @@ const ProjectsStyleWrapper = styled.div`
 
   
   .slider {
-    width: 530px;
+    width: 100%;
+    // width: 530px;
     text-align: center;
     overflow: hidden;
     display:flex;
+    // background-color:yellow;
   }
 
   .slides {
+    width:100%;
+    height:100%;
     display: flex;
+    align-items:center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -299,7 +307,7 @@ const ProjectsStyleWrapper = styled.div`
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 500px;
+    width: 100%;
     height: 500px;
     margin-right: 50px;
     // border-radius: 10px;
@@ -326,16 +334,20 @@ const ProjectsStyleWrapper = styled.div`
     height: 100%;
   }
   .numbers_container{
-    width:200px;
-    background-color:pink;
+    width:30px;
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    // background-color:pink;
+    height: 77%;
+    margin-top:14%;
   }
   .numbers_container > a {
     display: inline-flex;
     width: 100%;
-    height: 100%;
-    background: white;
+    height: 50%;
+    background-color: white;
+    border-radius:50px;
+
     text-decoration: none;
     align-items: center;
     justify-content: center;

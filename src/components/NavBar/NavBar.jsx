@@ -28,7 +28,7 @@ const Nav = () =>{
                       className="navItems home"
                       name="/about"
                       to="/about"
-                      >About</NavLink>
+                      >About Me</NavLink>
                     <NavLink
                       activeclassname="active_main_menu"
                       className="navItems home"
@@ -54,7 +54,7 @@ const NavStyleWrapper = styled.div `
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background-color: green;
+  // background-color: green;
   padding: 0 2%;
 }
 .navButtons{
