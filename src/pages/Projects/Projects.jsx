@@ -57,8 +57,15 @@ const Projects = () => {
                   </div>
 
                   {/* Technologies */}
-                  <div id={"nav" + (idx + 1) + "/3"}>
-                    <h5>tech</h5>
+                  <div id={"nav" + (idx + 1) + "/3"} className="techLogoParentContainer_Div">
+                    {p.tech.map((e)=>{
+                        return(
+                          <div>
+                            <img src={e.logo} className="techLogo" />
+                            <p className="techInfo" >{e.info}</p>
+                          </div>
+                        )
+                      })}
                   </div>
 
                   {/* Goals */}
@@ -253,11 +260,7 @@ const ProjectsStyleWrapper = styled.div`
     grid-template-columns:2fr 1fr;
   }
   
-  .description{
-    font-size:20px;
-    color:white;
-  }
-
+  
 
 
 
@@ -372,5 +375,30 @@ const ProjectsStyleWrapper = styled.div`
     .numbers_container > a {
       display: none;
     }
+  }
+
+
+
+
+
+
+  .description{
+    font-size:20px;
+    color:white;
+  }
+  .techLogoParentContainer_Div{
+    // background-color:yellow;
+    height:100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .techLogo{
+    width:30%;
+    position: static;
+    position:reletive;
+    object-fit: contain;
+  }
+  .techInfo{
+    font-size: 15px;
   }
 `;

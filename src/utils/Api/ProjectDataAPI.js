@@ -26,6 +26,17 @@ import TrapSweeper2 from "../../imageAndFont/images/trapSweeper2.png";
 import TrapSweeper3 from "../../imageAndFont/images/trapSweeper3.png";
 import TrapSweeper4 from "../../imageAndFont/images/trapSweeper4.png";
 import TrapSweeper5 from "../../imageAndFont/images/trapSweeper5.png";
+import MongoDbLogo from "../../imageAndFont/images/tech/mongodb.png";
+import JsLogo from "../../imageAndFont/images/tech/js.png";
+import ExpressLogo from "../../imageAndFont/images/tech/express.png";
+import GoogleLogo from "../../imageAndFont/images/tech/google.png";
+import NodeLogo from "../../imageAndFont/images/tech/node.png";
+import ReactLogo from "../../imageAndFont/images/tech/react.png";
+import DjangoLogo from "../../imageAndFont/images/tech/django.png";
+import MaterializeLogo from "../../imageAndFont/images/tech/materialize.png";
+import PythonLogo from "../../imageAndFont/images/tech/python.png";
+import HtmlLogo from "../../imageAndFont/images/tech/html.png";
+import CssLogo from "../../imageAndFont/images/tech/css.png";
 
 const Projects = [
         {
@@ -35,6 +46,12 @@ const Projects = [
             image:[Arcadi1 , Arcadi2 , Arcadi3 , Arcadi4 , Arcadi5],
             description: "This application provides automobile customers with vehicle listing, search and finance application in the most user friendly way to minimize the inconvenience of searching for a car.",
             info : ["a" , "b", "c"],
+            tech: [
+                {info : "good shit" , logo : MongoDbLogo} , 
+                {info : "good shit" , logo : ExpressLogo} , 
+                {info : "good shit" , logo : ReactLogo} , 
+                {info : "good shit" , logo : NodeLogo}
+            ],
             goals: "IDK",
             technology:'./image/MERN.png',
         } ,
@@ -45,6 +62,12 @@ const Projects = [
             image:[Zart1 ,Zart2 ,Zart3],
             description: "This project is a messaging app that is mostly backend focused with minimal visual touches, and the goal was to connect to people via real time chat using socket io",
             info : ["a" , "b", "c"],
+            tech: [
+                {info : "good shit" , logo : MongoDbLogo} , 
+                {info : "good shit" , logo : ExpressLogo} , 
+                {info : "good shit" , logo : ReactLogo} , 
+                {info : "good shit" , logo : NodeLogo}
+            ],
             goals: "",
             technology:'./image/MERN.png',
         } ,
@@ -52,9 +75,20 @@ const Projects = [
             name:'Junkie',
             gitHub:'https://github.com/adibfazli/junkie',
             link:'https://collection-junkie.herokuapp.com/',
-            image:[Junkie1 , Junkie2 , Junkie3 , Junkie4 , Junkie5],
+            image:[
+                {info : "good shit" , logo : Junkie1} , 
+                {info : "good shit" , logo : Junkie2} , 
+                {info : "good shit" , logo : Junkie3} , 
+                {info : "good shit" , logo : Junkie4} , 
+                {info : "good shit" , logo : Junkie5}
+            ],
             description: "This is a music and commic book collection organizer app which was build by group collaboration using Django.",
             info : ["a" , "b", "c"],
+            tech: [
+                {info : "good shit" , logo : PythonLogo} , 
+                {info : "good shit" , logo : DjangoLogo} , 
+                {info : "good shit" , logo : MaterializeLogo}
+            ],
             goals: "",
             technology:'./image/python.png',
         } ,
@@ -64,6 +98,11 @@ const Projects = [
             link:'https://browbrow.us/',
             image:[ Browbrow1 , Browbrow2 ,Browbrow3 , Browbrow4 ,Browbrow5],
             description: "This website was build to be displayed at the beauty salon, and informe customers of the available services following our clients guidelines and needs.",
+            tech: [
+                {info : "good shit" , logo : JsLogo} , 
+                {info : "good shit" , logo : HtmlLogo} , 
+                {info : "good shit" , logo : CssLogo}
+            ],
             info : ["a" , "b", "c"],
             goals: "",
             technology:'./image/python.png',
@@ -75,6 +114,13 @@ const Projects = [
             image:[ Youpick1 , Youpick2 , Youpick3 , Youpick4 , Youpick5],
             description: "This was a challenge project at the time I was in bootcamp to build an application to resemble instagram close as possible.",
             info : ["a" , "b", "c"],
+            tech: [
+                {info : "good shit" , logo : JsLogo} , 
+                {info : "good shit" , logo : MongoDbLogo} , 
+                {info : "good shit" , logo : ExpressLogo}, 
+                {info : "good shit" , logo : NodeLogo},
+                {info : "good shit" , logo : GoogleLogo}
+            ],
             goals: "",
             technology:'./image/MEN.png',
         } ,
@@ -85,6 +131,11 @@ const Projects = [
             image:[ TrapSweeper1 , TrapSweeper2 , TrapSweeper3 , TrapSweeper4 , TrapSweeper5],
             description: "Minesweeper doesn't need for an explanation, how ever this is minesweeper with a amall twist. I created this game using cheese and mouse trap insted of mines and square buttons.",
             info : ["" , "", ""],
+            tech: [
+                {info : "good shit" , logo : JsLogo} , 
+                {info : "good shit" , logo : HtmlLogo} , 
+                {info : "good shit" , logo : CssLogo}
+            ],
             goals: "",
             technology:'./image/jsHtmlCss.png',
         }
