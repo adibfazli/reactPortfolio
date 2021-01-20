@@ -26,20 +26,27 @@ const Projects = () => {
                   <div id={"nav"+(idx + 1)+"/1"} className="imageAndPointsGrid_Div">
 
                     <div className="slider">
+
                       <div className="numbers_container">
-                      {p.image.map((i , ii)=>{
-                        return(
-                          <a href={"#slide" + (idx+1) + "/" + (ii+1)}>{ii+1}</a>
-                        )
-                      })}
+                        {p.image.map((i , ii)=>{
+                          return(
+                            <a href={"#slide" + (idx+1) + "/" + (ii+1)}>
+                              <img  className="projectScreenShot_preview_img" src={i} />
+                            </a>
+                          )
+                        })}
                       </div>
+
                       <div className="slides">
-                      {p.image.map((i , ii)=>{
-                        return(
-                          <div id={"slide" + (idx+1) + "/" + (ii+1)}>2<img src={i} /></div>
-                        )
-                      })}
+                        {p.image.map((i , ii)=>{
+                          return(
+                            <div id={"slide" + (idx+1) + "/" + (ii+1)}>
+                              <img className="projectScreenShot" src={i} />
+                            </div>
+                          )
+                        })}
                       </div>
+                      
                     </div>
 
                     <div>
@@ -256,8 +263,9 @@ const ProjectsStyleWrapper = styled.div`
     // justify-content: center;
     // align-items: center;
     font-size: 100px;
-    display:grid;
-    grid-template-columns:2fr 1fr;
+
+    // display:grid;
+    // grid-template-columns:2fr 1fr;
   }
   
   
@@ -335,7 +343,7 @@ const ProjectsStyleWrapper = styled.div`
   .slides > div:target {
     // transform: scale(0.8);
   }
-  img {
+  .projectScreenShot {
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -348,15 +356,18 @@ const ProjectsStyleWrapper = styled.div`
     display:grid;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr;
     // background-color:pink;
-    height: 77%;
-    margin-top:14%;
+    // height: 100%;
+    margin-right:4%;
+  }
+  .projectScreenShot_preview_img{
+    width:400%;
   }
   .numbers_container > a {
     display: inline-flex;
-    width: 100%;
-    height: 50%;
-    background-color: white;
-    border-radius:50px;
+    // width: 100%;
+    // height: 100%;
+    // background-color: white;
+    // border-radius:50px;
 
     text-decoration: none;
     align-items: center;
@@ -386,19 +397,27 @@ const ProjectsStyleWrapper = styled.div`
     font-size:20px;
     color:white;
   }
+
   .techLogoParentContainer_Div{
     // background-color:yellow;
-    height:100px;
+    height:100%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .techLogo{
     width:30%;
     position: static;
-    position:reletive;
     object-fit: contain;
+    margin:0;
+    padding:0;
   }
+
   .techInfo{
-    font-size: 15px;
+    font-size: 25px;
+    margin:-3%;
+    padding:0;
+    color: white;
+    
   }
 `;
