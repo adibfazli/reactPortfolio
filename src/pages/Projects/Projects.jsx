@@ -58,7 +58,10 @@ const Projects = () => {
                   <div id={"nav"+(idx + 1)+"/2"} className="slider">
                     {p.info.map((i , ii)=>{
                       return(
-                      <div key={ii}>{i}</div>
+                      <div className="infoMainParent_div" key={ii}>
+                        <img className="infoEmoji" src={i.img} alt=""/>
+                        <p className="info_p">{i.info}</p>
+                      </div>
                       )
                     })}
                   </div>
@@ -419,5 +422,18 @@ const ProjectsStyleWrapper = styled.div`
     padding:0;
     color: white;
     
+  }
+
+  ///////////////////////////////////// info
+  .infoMainParent_div{
+    
+  }
+  .info_p{
+    color : white;
+    font-size: 20px;
+    width:40%;
+  }
+  .infoEmoji{
+    width:20%;
   }
 `;

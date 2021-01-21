@@ -26,6 +26,7 @@ import TrapSweeper2 from "../../imageAndFont/images/trapSweeper2.png";
 import TrapSweeper3 from "../../imageAndFont/images/trapSweeper3.png";
 import TrapSweeper4 from "../../imageAndFont/images/trapSweeper4.png";
 import TrapSweeper5 from "../../imageAndFont/images/trapSweeper5.png";
+// Logo
 import MongoDbLogo from "../../imageAndFont/images/tech/mongodb.png";
 import JsLogo from "../../imageAndFont/images/tech/js.png";
 import ExpressLogo from "../../imageAndFont/images/tech/express.png";
@@ -37,6 +38,11 @@ import MaterializeLogo from "../../imageAndFont/images/tech/materialize.png";
 import PythonLogo from "../../imageAndFont/images/tech/python.png";
 import HtmlLogo from "../../imageAndFont/images/tech/html.png";
 import CssLogo from "../../imageAndFont/images/tech/css.png";
+// Emoji
+import Plan from "../../imageAndFont/images/emoji/plan.jpg";
+import Dmv from "../../imageAndFont/images/emoji/dmv.png";
+import Search from "../../imageAndFont/images/emoji/search.png";
+
 
 const Projects = [
         {
@@ -45,7 +51,24 @@ const Projects = [
             link:'https://zart-message.herokuapp.com/login',
             image:[Arcadi1 , Arcadi2 , Arcadi3 , Arcadi4 , Arcadi5],
             description: "This application provides automobile customers with vehicle listing, search and finance application in the most user friendly way to minimize the inconvenience of searching for a car.",
-            info : ["a" , "b", "c"],
+            info : [
+                { 
+                    img : Plan ,
+                    info :"We set our goal to create the right kind of a car dealer website accentuates the odds of finding success for an agency." 
+                }, 
+                { 
+                    img : Dmv ,
+                    info :"Arcadi is a online application which allows the admin to create an inventory of vehicles on their dealership and post images, information and options of their vehicle by searching and selecting the U.S Department of Motor Vehicle list api, which provides accurate information both for the dealer and their customers."
+                },
+                { 
+                    img : Search ,
+                    info :"Arcadiacars.com allows the customer to search and filter by type, make, model, and year in order to provide them the best result in the shortest time possible."
+                },
+                { 
+                    img : Dmv ,
+                    info :"You can find more technical detail about this application in the Technology section of Arcadiacars.com."
+                }
+            ],
             tech: [
                 {info : "good shit" , logo : MongoDbLogo} , 
                 {info : "good shit" , logo : ExpressLogo} , 
@@ -61,7 +84,12 @@ const Projects = [
             link:'https://www.arcadiacars.com/',
             image:[Zart1 ,Zart2 ,Zart3],
             description: "This project is a messaging app that is mostly backend focused with minimal visual touches, and the goal was to connect to people via real time chat using socket io",
-            info : ["a" , "b", "c"],
+            info : [
+                { 
+                    img : Dmv ,
+                    info : "hi"
+                }
+            ],
             tech: [
                 {info : "good shit" , logo : MongoDbLogo} , 
                 {info : "good shit" , logo : ExpressLogo} , 
@@ -83,7 +111,12 @@ const Projects = [
                 {info : "good shit" , logo : Junkie5}
             ],
             description: "This is a music and commic book collection organizer app which was build by group collaboration using Django.",
-            info : ["a" , "b", "c"],
+            info : [
+                { 
+                    img : Dmv ,
+                    info : "hi"
+                }
+            ],
             tech: [
                 {info : "good shit" , logo : PythonLogo} , 
                 {info : "good shit" , logo : DjangoLogo} , 
@@ -103,7 +136,12 @@ const Projects = [
                 {info : "good shit" , logo : HtmlLogo} , 
                 {info : "good shit" , logo : CssLogo}
             ],
-            info : ["a" , "b", "c"],
+            info : [
+                { 
+                    img : Dmv ,
+                    info : "hi"
+                }
+            ],
             goals: "",
             technology:'./image/python.png',
         } ,
@@ -130,7 +168,12 @@ const Projects = [
             link:'https://adibfazli.github.io/Minesweeper/',
             image:[ TrapSweeper1 , TrapSweeper2 , TrapSweeper3 , TrapSweeper4 , TrapSweeper5],
             description: "Minesweeper doesn't need for an explanation, how ever this is minesweeper with a amall twist. I created this game using cheese and mouse trap insted of mines and square buttons.",
-            info : ["" , "", ""],
+            info : [
+                { 
+                    img : Dmv ,
+                    info : "TramSweeper is a version of the classic Minesweeper game. This game is a single-player puzzle video game. The objective of the game is to clear a rectangular cheese containing hidden \"mouse traps\" without detonating any of them, with help from clues about the number of neighboring traps in each field. If a square cheese containing a trap is revealed, the player loses the game."
+                },
+            ],
             tech: [
                 {info : "good shit" , logo : JsLogo} , 
                 {info : "good shit" , logo : HtmlLogo} , 
