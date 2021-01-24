@@ -55,7 +55,7 @@ const Projects = () => {
                   </div>
 
                   {/* Info */}
-                  <div id={"nav"+(idx + 1)+"/2"} className="slider">
+                  <div id={"nav"+(idx + 1)+"/2"} className="infoGrid_Div">
                     {p.info.map((i , ii)=>{
                       return(
                       <div className="infoMainParent_div" key={ii}>
@@ -425,13 +425,22 @@ const ProjectsStyleWrapper = styled.div`
   }
 
   ///////////////////////////////////// info
+  .infoGrid_Div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+  }
   .infoMainParent_div{
-    
+    display: flex;
+    flex-direction:column;
+    margin-top:10%;
+    align-items:center;
+    wisth:100%;
   }
   .info_p{
     color : white;
     font-size: 20px;
-    width:40%;
+    width:100%;
   }
   .infoEmoji{
     width:20%;
