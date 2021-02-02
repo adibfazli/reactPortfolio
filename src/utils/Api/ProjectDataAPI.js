@@ -39,9 +39,10 @@ import PythonLogo from "../../imageAndFont/images/tech/python.png";
 import HtmlLogo from "../../imageAndFont/images/tech/html.png";
 import CssLogo from "../../imageAndFont/images/tech/css.png";
 // Emoji
-import Plan from "../../imageAndFont/images/emoji/plan.jpg";
+import Plan from "../../imageAndFont/images/emoji/plan.png";
 import Dmv from "../../imageAndFont/images/emoji/dmv.png";
 import Search from "../../imageAndFont/images/emoji/search.png";
+import More from "../../imageAndFont/images/emoji/more.png";
 
 
 const Projects = [
@@ -65,7 +66,7 @@ const Projects = [
                     info :"Arcadiacars.com allows the customer to search and filter by type, make, model, and year in order to provide them the best result in the shortest time possible."
                 },
                 { 
-                    img : Dmv ,
+                    img : More ,
                     info :"You can find more technical detail about this application in the Technology section of Arcadiacars.com."
                 }
             ],
@@ -86,7 +87,7 @@ const Projects = [
             description: "This project is a messaging app that is mostly backend focused with minimal visual touches, and the goal was to connect to people via real time chat using socket io",
             info : [
                 { 
-                    img : Dmv ,
+                    img : More ,
                     info : "hi"
                 }
             ],
@@ -113,7 +114,7 @@ const Projects = [
             description: "This is a music and commic book collection organizer app which was build by group collaboration using Django.",
             info : [
                 { 
-                    img : Dmv ,
+                    img : More ,
                     info : "hi"
                 }
             ],
@@ -138,7 +139,7 @@ const Projects = [
             ],
             info : [
                 { 
-                    img : Dmv ,
+                    img : More ,
                     info : "hi"
                 }
             ],
@@ -151,7 +152,12 @@ const Projects = [
             link:'https://youpick2.herokuapp.com/',
             image:[ Youpick1 , Youpick2 , Youpick3 , Youpick4 , Youpick5],
             description: "This was a challenge project at the time I was in bootcamp to build an application to resemble instagram close as possible.",
-            info : ["a" , "b", "c"],
+            info : [
+                { 
+                    img : More ,
+                    info : "XXX"
+                },
+            ],
             tech: [
                 {info : "good shit" , logo : JsLogo} , 
                 {info : "good shit" , logo : MongoDbLogo} , 
@@ -170,7 +176,7 @@ const Projects = [
             description: "Minesweeper doesn't need for an explanation, how ever this is minesweeper with a amall twist. I created this game using cheese and mouse trap insted of mines and square buttons.",
             info : [
                 { 
-                    img : Dmv ,
+                    img : More ,
                     info : "TramSweeper is a version of the classic Minesweeper game. This game is a single-player puzzle video game. The objective of the game is to clear a rectangular cheese containing hidden \"mouse traps\" without detonating any of them, with help from clues about the number of neighboring traps in each field. If a square cheese containing a trap is revealed, the player loses the game."
                 },
             ],

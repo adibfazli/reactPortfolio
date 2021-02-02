@@ -443,6 +443,6 @@ const ProjectsStyleWrapper = styled.div`
     width:100%;
   }
   .infoEmoji{
-    width:20%;
+    width:35%;
   }
 `;
