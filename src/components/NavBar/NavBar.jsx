@@ -9,7 +9,7 @@ const Nav = () =>{
     return(
         <NavStyleWrapper>
             <div className="nav">
-                <h1>Adib</h1>
+                <h1>Adib.</h1>
                 <div className="navButtons">
                     <NavLink
                       activeclassname="active_main_menu"
